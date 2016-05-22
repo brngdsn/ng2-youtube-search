@@ -17,7 +17,8 @@ export class YoutubesearchComponent implements OnInit {
 
   constructor(private _formBuilder: FormBuilder, private _http: Http) {
     const API_URL = 'https://www.googleapis.com/youtube/v3/search';
-    const API_KEY = 'AIzaSyCRwaAmISwzih5Clcpmrxoxtm19OLfKptw';
+    // get a key at https://console.developers.google.com/apis/api/youtube
+    const API_KEY = '';
 
     this.searchForm = this._formBuilder.group({
       'search': ['', Validators.required]
